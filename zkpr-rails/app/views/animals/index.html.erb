@@ -1,0 +1,13 @@
+<h1>All Animals</h1>
+
+<div>
+  <% @animals.each do |animal| %>
+    <div>
+      <h3><%= link_to animal.name, animal %></h3>
+      <p>
+        <%= animal.description %>
+      </p>
+    </div>
+    <hr />
+  <% end %>
+</div>

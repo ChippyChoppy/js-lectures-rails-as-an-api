@@ -1,0 +1,9 @@
+<div>
+  <h1><%= @animal.name %></h1>
+  <p>
+    <%= @animal.description %>
+  </p>
+  <%= image_tag @animal.imageUrl, { width: 500 } %>
+</div>
+
+<%= link_to '<= Back', animals_path %>
