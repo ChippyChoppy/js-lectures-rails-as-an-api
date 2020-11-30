@@ -53,7 +53,7 @@ This will show you all the option flags you can use when creating a new Rails pr
 Here's what we'll run to set up our API:
 
 ```bash
-rails new <my_app_name> --api --database==postgresql -T
+rails new <my_app_name> --api --database=postgresql -T
 ```
 
 _(Replace `<my_app_name>` with the actual name of your project)_
@@ -61,7 +61,7 @@ _(Replace `<my_app_name>` with the actual name of your project)_
 This is what the option flags we're using do:
 
 - `--api`: "Preconfigure smaller stack for API only apps". Don't include code for generating **Views**.
-- `--database==postgresql`: Use Postgresql as the database instead of SQLite. Will make it easier to deploy our app.
+- `--database=postgresql`: Use Postgresql as the database instead of SQLite. Will make it easier to deploy our app.
 - `-T`: Skip test files.
 
 > If you forget the `--api` flag you need to add this in your ApplicationController: `skip_before_action :verify_authenticity_token`
